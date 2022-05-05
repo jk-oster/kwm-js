@@ -1,0 +1,87 @@
+/* by Matthias Neuwersch */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Nav */
+header ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 80px;
+    background-color: #4757a7;
+    list-style-type: none;
+    padding-right: 70px;
+}
+header ul li{
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer;
+}
+header ul li a{
+    height: 80px;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    display:block;
+}
+header ul li:hover{
+    background-color: white;
+}
+header ul li:hover a{
+    text-decoration: none;
+    color: black;
+}
+/* Footer */
+
+footer{
+    height: 80px;
+    background-color: #4757a7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+}
+footer p{
+    margin: 0;
+}
+
+/* Main */
+#kwmJS{
+    padding: 100px 50px;
+}
+#main_content h1{
+    padding-left: 15px;
+}
+
+/* Shop */
+#pets{
+    display: flex;
+}
+.pet{
+    flex: 1 1 0px;
+    margin: 0 15px;
+    border: 1px solid black;
+}
+.pet-thumbnail{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 280px;
+}
+.pet-thumbnail span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    padding: 2px 5px;
+    background-color: rgba(0,0,0,0.7);
+}
+.pet-bio{
+    padding: 10px 20px;
+}
