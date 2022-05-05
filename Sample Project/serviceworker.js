@@ -7,19 +7,21 @@ self.addEventListener('install', event => {
     console.log('SW install');
     event.waitUntil(caches.open(myCache).then(function (cache) {
         return cache.addAll(filesToCache).then(() => {
-            console.log('Assets cached');
+            console.log('Static assets cached');
         }).catch(err => {
-            console.log('Error caching assets', err);
+            console.log('Error caching static assets', err);
         });
     }));
 });
 
 self.addEventListener('activate', () => {
     console.log('Service Worker activate');
+    // Do stuff here
 });
 
 self.addEventListener('fetch', event => {
     console.log('Fetch intercepted', event.request);
+    // Do some more stuff here
 });
 
 self.addEventListener('push', event => {

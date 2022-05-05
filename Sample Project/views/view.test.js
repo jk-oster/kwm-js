@@ -15,6 +15,6 @@ view.rendering = async function(){
     let obs = kwm.obs('TestText');
     let obs2 = kwm.obs('33');
     let comp = kwm.compute(()=> `${obs2.value * obs2.value} -> I am ${obs2.value} square and I have been computed`,[obs2]);
-    obs.subscribe((val)=>console.log(val))
+    obs.subscribe((val)=>console.log('I could send a POST request to store' + val + 'in my API'));
     kwm.bindings({'input': obs, 'select': obs2,'inputComputed':comp});
 };
