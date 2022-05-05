@@ -1,7 +1,7 @@
 # kwm-js
 A customized vanilla JS framework for Single Page Applications / Progressive Web Applications.
 
-This bundle is targeted to be used for the course *Progressive Web Applications with Headless CMS*.
+This bundle is targeted to be used for the course *Progressive Web Applications with Headless CMS* at the [University of applied sciences Hagenberg](https://www.fh-ooe.at/campus-hagenberg/).
 
 The class-bundle offers:
 - Expressive and intelligent templating engine: allowing `if|else|for|while|switch` statements,
