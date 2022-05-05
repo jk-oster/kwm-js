@@ -32,8 +32,8 @@ new KWMJS(config);
 ```
 After instantiation KWMJS and all its functions will always be available as global object by calling `window.kwm`.
 
-For to see how data binding works take a look at `view.test.js` and for templating examples see the connected template files `test.tpl`,
-`partials/partial.tpl` and `partials/partial2.tpl`.
+To see how views and data binding works take a look at `view.test.js` and for templating examples see the connected template files `test.tpl`,
+`partials/partial.tpl` and `partials/partial2.tpl`. Every view needs to be imported in the router and added to `routes` member array.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
