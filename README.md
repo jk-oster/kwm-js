@@ -6,7 +6,7 @@ This bundle is targeted to be used for the course *Progressive Web Applications 
 The class-bundle offers:
 - Expressive and intelligent templating engine: allowing `if|else|for|while|switch` statements,
 flexible asynchronous template fetching and insertion of partial-templates, smart caching of static templates
-- Flexible 2-way-data-binding by `Observable` and `Computed` values
+- Flexible declarative 2-way-data-binding by `Observable` and `Computed` values
 - Simple translation engine with the possibility to switch language by URL parameter
 - Simple hash-based routing
 - Simple configuration
