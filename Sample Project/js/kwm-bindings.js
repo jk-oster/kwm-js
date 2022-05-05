@@ -10,7 +10,7 @@
  * - usage: 'new Bindings({lastName: new Observable('Osterberger')}'
  * binds the HtmlElement with 'data-bind="lastName"' to this Observable
  *
- * @param objObservables - Give me an object containing Observables with keys corresponding to your data-bind properties
+ * @param objObservables - Give me an object containing Observables with their keys corresponding to your data-bind properties
  *
  * @author Jakob Osterberger - 2022-04-05
  */
@@ -42,16 +42,15 @@ export default class Bindings {
         if (!kwm.utils.isEmpty(this.bindings)) {
             document.querySelectorAll("[data-bind]").forEach(elem => {
                 if (this.bindings[elem.dataset.bind.replace('value: ', '').replace('text: ', '')]) {
+                    let observable;
                     if (elem.dataset.bind.includes('value: ')) {
-                        const observable = this.bindings[elem.dataset.bind.replace('value: ', '')];
-                        this.bindValue(elem, observable);
+                        observable = this.bindings[elem.dataset.bind.replace('value: ', '')];
                     } else if (elem.dataset.bind.includes('text: ')) {
-                        const observable = this.bindings[elem.dataset.bind.replace('text: ', '')];
-                        this.bindText(elem, observable);
+                        observable = this.bindings[elem.dataset.bind.replace('text: ', '')];
                     } else {
-                        const observable = this.bindings[elem.dataset.bind];
-                        this.bindValue(elem, observable);
+                        observable = this.bindings[elem.dataset.bind];
                     }
+                    this.bindText(elem, observable);
                 } else console.warn('No observable found for binding of: ', elem);
             });
         } else throw 'no observers passed to Bindings';

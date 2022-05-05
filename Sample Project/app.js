@@ -1,4 +1,4 @@
-import KWMJS from "./kwm.js";
+import KWMJS from "./js/kwm.js";
 const config = {
     appContainer: document.querySelector('#kwmJS'),
     debugMode: true,

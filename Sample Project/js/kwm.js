@@ -11,7 +11,7 @@ import KWM_Bindings from "./kwm-bindings.js?v=0.2";
  *     Class-Bundle for KWM-Applications - it provides:
  *     - Expressive and intelligent templating engine: allowing if|else|for|while|switch statements,
  *     flexible asynchronous template fetching and insertion of partials, smart caching of static templates
- *     - Flexible 2-way-data-binding with observables and computed values
+ *     - Flexible declarative 2-way-data-binding with observables and computed values
  *     - Simple hash-based routing
  *     - Simple configuration
  *     - Simple translation engine with the possibility to switch language by URL parameter
